@@ -4,6 +4,9 @@ Overview
 
 This project is a Big Data Movie Recommendation System implemented using Apache Spark. The system leverages collaborative filtering techniques to generate movie recommendations based on user ratings. The project is built using PySpark and executed in Google Colab with a distributed computing environment.
 
+This project was completed as part of the MSBA program for the course IDS 561 - Analytics for Big Data.
+This project is a Big Data Movie Recommendation System implemented using Apache Spark. The system leverages collaborative filtering techniques to generate movie recommendations based on user ratings. The project is built using PySpark and executed in Google Colab with a distributed computing environment.
+
 Features
 
 Big Data Processing: Utilizes Apache Spark for handling large-scale movie rating data.
