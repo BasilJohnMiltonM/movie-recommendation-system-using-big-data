@@ -1,13 +1,13 @@
-Movie Recommendation System
+**Movie Recommendation System**
 
-Overview
+**Overview**
 
 This project is a Big Data Movie Recommendation System implemented using Apache Spark. The system leverages collaborative filtering techniques to generate movie recommendations based on user ratings. The project is built using PySpark and executed in Google Colab with a distributed computing environment.
 
 This project was completed as part of the MSBA program for the course IDS 561 - Analytics for Big Data.
 This project is a Big Data Movie Recommendation System implemented using Apache Spark. The system leverages collaborative filtering techniques to generate movie recommendations based on user ratings. The project is built using PySpark and executed in Google Colab with a distributed computing environment.
 
-Features
+**Features:**
 
 Big Data Processing: Utilizes Apache Spark for handling large-scale movie rating data.
 
@@ -17,7 +17,7 @@ Data Analysis & Visualization: Analyzes user behavior, genre popularity, and mov
 
 Google Colab Integration: Runs on Google Colab with Spark setup.
 
-Dataset
+**Dataset**
 
 The project uses the MovieLens dataset, which contains:
 
@@ -27,7 +27,7 @@ ratings.csv: User ratings for movies (userId, movieId, rating, timestamp)
 
 tags.csv: User-assigned tags for movies
 
-Technologies Used
+**Technologies Used**
 
 Python (pandas, matplotlib, seaborn)
 
@@ -37,7 +37,7 @@ Google Colab (for cloud execution)
 
 Big Data Processing (Distributed computation with Spark)
 
-Installation & Setup
+**Installation & Setup**
 
 Clone the repository:
 
@@ -50,7 +50,7 @@ pip install findspark pyspark pandas matplotlib seaborn
 
 Run Jupyter Notebook or Google Colab.
 
-Steps in the Project
+**Steps in the Project**
 
 1. Environment Setup
 
@@ -98,25 +98,25 @@ Generated movie recommendations for users
 
 Evaluated using RMSE (Root Mean Square Error) and Precision-Recall metrics
 
-Results & Findings
+**Results & Findings**
 
-Popular movies tend to have lower average ratings due to a large number of diverse opinions.
+* Popular movies tend to have lower average ratings due to a large number of diverse opinions.
 
-Less popular movies with niche audiences often receive higher ratings, indicating strong user affinity for specific genres or content.
+* Less popular movies with niche audiences often receive higher ratings, indicating strong user affinity for specific genres or content.
 
-Highly active users (who rate many movies) play a significant role in the recommendation system, as their preferences help shape collaborative filtering.
+* Highly active users (who rate many movies) play a significant role in the recommendation system, as their preferences help shape collaborative filtering.
 
-Comedy and Drama are the most frequently rated genres, while niche genres like Documentary and Film-Noir have fewer but often highly rated entries.
+* Comedy and Drama are the most frequently rated genres, while niche genres like Documentary and Film-Noir have fewer but often highly rated entries.
 
-The ALS model performed well in personalized recommendations, especially for users with a higher number of ratings.
+* The ALS model performed well in personalized recommendations, especially for users with a higher number of ratings.
 
-User-Based Collaborative Filtering provided additional insights by recommending movies based on user-user similarity.
+* User-Based Collaborative Filtering provided additional insights by recommending movies based on user-user similarity.
 
-There is a strong correlation between movies with a high number of ratings and their overall rating variance, meaning that the more people rate a movie, the more polarized the ratings can be.
+* There is a strong correlation between movies with a high number of ratings and their overall rating variance, meaning that the more people rate a movie, the more polarized the ratings can be.
 
-Cold Start Problem: New users and movies with very few ratings tend to receive less accurate recommendations. This could be improved with hybrid filtering techniques.
+* Cold Start Problem: New users and movies with very few ratings tend to receive less accurate recommendations. This could be improved with hybrid filtering techniques.
 
-Future Enhancements
+**Future Enhancements**
 
 Add content-based filtering using NLP on movie descriptions.
 
